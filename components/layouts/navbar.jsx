@@ -15,12 +15,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo Section */}
         <div className="flex flex-col cursor-pointer">
-          <span className="text-2xl md:text-3xl font-bold text-[#1a73e8] leading-none tracking-tight">accredian</span>
-          <span className="text-[10px] md:text-[11px] text-gray-400 font-medium tracking-tight">credentials that matter</span>
+          <span className="text-2xl md:text-[28px] font-extrabold text-[#1a73e8] leading-none tracking-tight">accredian</span>
+          <span className="text-[10px] text-gray-500 font-medium tracking-wide mt-0.5">credentials that matter</span>
         </div>
         
         {/* Navigation Links */}
-        <div className="hidden lg:flex items-center space-x-8 text-[15px] font-medium text-gray-600">
+        <div className="hidden lg:flex items-center space-x-8 text-[15px] font-semibold text-gray-800">
           {navLinks.map((link) => (
             <a
               key={link}
@@ -32,7 +32,7 @@ const Navbar = () => {
             >
               {link}
               {activeLink === link && (
-                <span className="absolute -bottom-1.5 left-0 w-full h-0.5 bg-blue-600 rounded-full" />
+                <span className="absolute -bottom-1 left-0 w-full h-[3px] bg-blue-600 rounded-full" />
               )}
             </a>
           ))}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer = ({ onEnquire }) => {
   return (
     <footer className="bg-white text-gray-800 pt-12 pb-6 px-6 border-t border-gray-100">
       <div className="max-w-7xl mx-auto">
@@ -23,7 +23,10 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col items-end">
-            <button className="bg-blue-600 text-white px-6 py-2.5 rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors">
+            <button 
+              onClick={onEnquire}
+              className="bg-blue-600 text-white px-6 py-2.5 rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors"
+            >
               Enquire Now
             </button>
             <span className="text-[11px] text-gray-500 mt-1 mr-1 italic">Speak with our Advisor</span>

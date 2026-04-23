@@ -1,8 +1,11 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import Container from '../ui/container';
 import Button from '../ui/button';
+import EnquireModal from '../ui/EnquireModal';
 
-const Hero = () => {
+const Hero = ({ onEnquire }) => {
   const benefits = [
     'Tailored Solutions',
     'Industry Insights',
@@ -42,9 +45,12 @@ const Hero = () => {
             </div>
 
             <div className="flex mb-6 sm:mb-0 justify-center sm:justify-start pt-4">
-              <Button className="w-[80%] sm:w-[170px] p-[7px] text-md rounded-xl shadow-[0_10px_20px_-5px_rgba(37,99,235,0.4)]">
-                Enquire Now
-              </Button>
+              <button 
+                onClick={onEnquire}
+                className="w-[80%] sm:w-[170px] p-[7px] text-md font-normal text-white bg-[#1a73e8] rounded-lg shadow-md transition-all hover:bg-blue-700 active:scale-[0.98]"
+              >
+                <p className="text-sm md:text-xl font-medium">Enquire Now</p>
+              </button>
             </div>
           </div>
 
