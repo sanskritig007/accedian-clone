@@ -15,22 +15,22 @@ const CourseSegmentation = () => {
     {
       title: 'Program Specific',
       description: 'Certificate, Executive, Post Graduate Certificate',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600',
+      image: 'https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/program-specific.png',
     },
     {
       title: 'Industry Specific',
       description: 'IT, Healthcare, Retail, Finance, Education, Manufacturing',
-      image: 'https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&q=80&w=600',
+      image: 'https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/industry-specific.png',
     },
     {
       title: 'Topic Specific',
       description: 'Machine Learning, Design, Analytics, Cybersecurity, Cloud',
-      image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=600',
+      image: 'https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/topic-specific.png',
     },
     {
       title: 'Level Specific',
       description: 'Senior Leadership, Mid-Career Professionals, Freshers',
-      image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600',
+      image: 'https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/level-specific.png',
     },
   ];
 
@@ -57,16 +57,16 @@ const CourseSegmentation = () => {
               640: { slidesPerView: 2 },
               1024: { slidesPerView: 4 },
             }}
-            className="pb-12"
+            className="pb-16"
           >
             {courses.map((course, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-300 h-full flex flex-col transition-all duration-300 hover:shadow-2xl">
-                  <div className="h-44 overflow-hidden border-b border-gray-100">
+                <div className="bg-white rounded-xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-100 h-full flex flex-col transition-all duration-300 hover:shadow-[0_20px_50px_rgba(8,112,184,0.2)] group cursor-pointer">
+                  <div className="h-44 overflow-hidden">
                     <img 
                       src={course.image} 
                       alt={course.title} 
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                   <div className="p-6 flex flex-col flex-grow items-center text-center">
@@ -87,6 +87,9 @@ const CourseSegmentation = () => {
       <style jsx global>{`
         .swiper-pagination-bullet-active {
           background: #1a73e8 !important;
+        }
+        .swiper-pagination {
+          bottom: 0 !important;
         }
       `}</style>
     </section>

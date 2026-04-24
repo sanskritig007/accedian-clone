@@ -12,11 +12,11 @@ const EnquireModal = ({ isOpen, onClose }) => {
         {/* Left Side: Image */}
         <div className="hidden md:block w-[40%] relative">
           <img 
-            src="https://images.unsplash.com/photo-1573161559521-45022b8e0d65?auto=format&fit=crop&q=80&w=1000" 
+            src="https://storage.googleapis.com/accredian-assets/Frontend_Assests/Images/Accredian-react-site-images/other/imagehuman.png" 
             alt="Corporate Meeting" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-blue-900/20" />
+          <div className="absolute inset-0 bg-blue-900/10" />
         </div>
 
         {/* Right Side: Form */}

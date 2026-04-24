@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo Section */}
         <div className="flex flex-col cursor-pointer">
-          <span className="text-2xl md:text-[28px] font-extrabold text-[#1a73e8] leading-none tracking-tight">accredian</span>
+          <span className="text-2xl md:text-[28px] font-extrabold text-universal leading-none tracking-tight">accredian</span>
           <span className="text-[10px] text-gray-500 font-medium tracking-wide mt-0.5">credentials that matter</span>
         </div>
         

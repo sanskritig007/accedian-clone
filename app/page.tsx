@@ -9,6 +9,8 @@ import Partnerships from "@/components/sections/partnerships";
 import Edge from "@/components/sections/edge";
 import Domain from "@/components/sections/Domain";
 import CourseSegmentation from "@/components/sections/CourseSegmentation";
+import Audience from "@/components/sections/Audience";
+import CAT from "@/components/sections/CAT";
 import EnquireModal from "@/components/ui/EnquireModal";
 
 export default function Home() {
@@ -25,6 +27,8 @@ export default function Home() {
         <Edge />
         <Domain />
         <CourseSegmentation />
+        <Audience />
+        <CAT />
         
         {/* More sections will go here as we build them */}
         <div className="h-96 flex items-center justify-center text-gray-300 italic">
